@@ -43,3 +43,20 @@ class Piggy(object):
 
 poncho = Piggy()
 #poncho.cha_cha()
+
+def menu():
+    while True:
+        input = raw_input("Press 1 for cruise \n Press 2 for pulse \n Press 3 for sweep)"
+        if "1" in input:
+            p.cruise()
+        elif "2" in input:
+            p.pulse()
+        elif "3" in input:
+            p.servo_sweep()
+
+try:
+    menu()
+except Exception as ee:
+    print(ee)
+    from gopigo import *
+    stop())
