@@ -31,13 +31,16 @@ class Piggy(object):
             servo(ang)
             time.sleep(.2)
 
-    def cha_cha(selfself):
+    def cha_cha(self):
         for x in range(5):
             right_rot()
             time_sleep(.5)
             left_rot()
             time.sleep(.5)
             stop()
+
+    def rain_dance(self):
+
 
 ### MY APP
 
@@ -57,6 +60,5 @@ def menu():
 try:
     menu()
 except Exception as ee:
-    print(ee)
     from gopigo import *
     stop()
