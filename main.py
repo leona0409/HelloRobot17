@@ -39,8 +39,6 @@ class Piggy(object):
             time.sleep(.5)
             stop()
 
-    def rain_dance(self):
-
 
 ### MY APP
 
